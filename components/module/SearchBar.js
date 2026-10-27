@@ -16,7 +16,7 @@ function SearchBar() {
       return alert("Enter at least one of the min or max values")
 
     router.push({
-      pathname: "/filter",
+      pathname: "/cars/filter",
       query: params,
     })
   }
