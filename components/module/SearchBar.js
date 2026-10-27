@@ -6,6 +6,7 @@ function SearchBar() {
   const [min, setMin] = useState("")
   const [max, setMax] = useState("")
   const router = useRouter()
+  const onlyDigits = (value) => value.replace(/\D/g, "")
 
   const searchHandler = () => {
     const params = {}
@@ -25,12 +26,12 @@ function SearchBar() {
         <input
           placeholder="Type min-price"
           value={min}
-          onChange={(e) => setMin(e.target.value)}
+          onChange={(e) => setMin(onlyDigits(e.target.value))}
         />
         <input
           placeholder="Type max-price"
           value={max}
-          onChange={(e) => setMax(e.target.value)}
+          onChange={(e) => setMax(onlyDigits(e.target.value))}
         />
       </div>
       <button onClick={searchHandler}>Search</button>
