@@ -57,22 +57,22 @@ The application includes the following main pages and routes:
 
 ### Home Page
 
-![Home Page](/docs/home-page.png)
+![Home Page](./docs/home-page.png)
 
 ### Cars Page
 
-![Cars Page](/docs/cars-page.png)
+![Cars Page](./docs/cars-page.png)
 
-![Cars Page](/docs/cars-page-2.png)
+![Cars Page](./docs/cars-page-2.png)
 
 ### Categoried Cars
 
-![Categoried Cars](/docs/categoried-cars.png)
+![Categoried Cars](./docs/categoried-cars.png)
 
 ### Car Details
 
-![Car Details](/docs/car-details.png)
+![Car Details](./docs/car-details.png)
 
 ### 404 Page
 
-![404 Page](/docs/not-found.png)
+![404 Page](./docs/not-found.png)
