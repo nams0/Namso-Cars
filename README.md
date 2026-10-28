@@ -1,40 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Namso Cars 🚗
 
-## Getting Started
+A modern, responsive car browsing application built with **Next.js** and **React**. Explore different car categories, view detailed vehicle information, and filter cars by price to find your car.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Landing Page:** A homepage introducing the application, with a button to explore all cars.
+- **Car Listings:** Browse the available vehicles in a card-based layout.
+- **Car Categories:** Explore cars by category, including SUVs, sedans, sports cars, and hatchbacks.
+- **Car Details:** View detailed information about each vehicle, including its model, year, mileage, location, description, and price.
+- **Price Filtering:** Filter cars using minimum and maximum price values.
+- **Dynamic Routing:** Navigate between car listings, category pages, and individual vehicle details.
+- **Custom 404 Page:** A dedicated page for handling unavailable routes and cars.
+- **Responsive Styling:** CSS Modules for component-specific styling.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- **Next.js** — React framework for page routing and application structure.
+- **React** — Building reusable UI components.
+- **JavaScript** — Application logic and interactivity.
+- **CSS Modules** — Component-scoped styling.
+- **Next.js Router** — Navigation and dynamic route handling.
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Car Data
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+The application uses a local JavaScript data file (`data/carsData.js`) containing vehicle information.
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Each car includes properties such as:
 
-## Learn More
+- `id` — Unique identifier.
+- `name` — Car brand or name.
+- `model` — Vehicle model.
+- `year` — Registration or model year.
+- `distance` — Mileage.
+- `location` — Vehicle location.
+- `price` — Listed price.
+- `description` — Vehicle description.
+- `image` — Path to the vehicle image.
+- `category` — Vehicle category.
 
-To learn more about Next.js, take a look at the following resources:
+The available categories include **Sport**, **SUV**, **Sedan**, and **Hatchback**.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+## Navigation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The application includes the following main pages and routes:
 
-## Deploy on Vercel
+| Route                    | Description                     |
+| ------------------------ | ------------------------------- |
+| `/`                      | Landing page                    |
+| `/cars`                  | Browse all cars                 |
+| `/cars/[carId]`          | View details for a specific car |
+| `/categories/[category]` | Browse cars by category         |
+| `/cars/filter`           | Filter cars by price            |
+| `/404`                   | Custom not-found page           |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Screenshots
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+### Home Page
+
+![Home Page](/docs/home-page.png)
+
+### Cars Page
+
+![Cars Page](/docs/cars-page.png)
+
+![Cars Page](/docs/cars-page-2.png)
+
+### Categoried Cars
+
+![Categoried Cars](/docs/categoried-cars.png)
+
+### Car Details
+
+![Car Details](/docs/car-details.png)
+
+### 404 Page
+
+![404 Page](/docs/not-found.png)
