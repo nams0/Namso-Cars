@@ -7,7 +7,7 @@ function Layout({ children }) {
       <header className={styles.header}>
         <Link href="/">
           <h2>Namso Cars</h2>
-          <p>Choose and buy your car</p>
+          <p>Discover. Choose. Drive.</p>
         </Link>
       </header>
 

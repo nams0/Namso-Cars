@@ -1,0 +1,223 @@
+.container {
+  max-width: 1200px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: #171717;
+}
+
+.hero {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  align-items: center;
+  gap: 40px;
+  padding: 60px 0 80px;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+.subtitle {
+  color: #738d00;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+  margin-bottom: 24px;
+}
+
+.content h1 {
+  font-size: clamp(3rem, 5vw, 5rem);
+  line-height: 1.08;
+  letter-spacing: -3px;
+  margin: 0;
+}
+
+.content h1 span {
+  color: #8ba900;
+}
+
+.description {
+  color: #737373;
+  max-width: 420px;
+  line-height: 1.8;
+  font-size: 1.05rem;
+  margin: 25px 0 30px;
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  background: #befa00;
+  border: none;
+  border-radius: 6px;
+  padding: 17px 24px;
+  font-size: 1rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.cta:hover {
+  background: #a8df00;
+  transform: translateY(-3px);
+}
+
+.cta span {
+  font-size: 1.4rem;
+}
+
+.stats {
+  display: flex;
+  gap: 40px;
+  margin-top: 55px;
+}
+
+.stats div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.stats strong {
+  font-size: 1.5rem;
+}
+
+.stats span {
+  color: #777;
+  font-size: 0.85rem;
+}
+
+.visual {
+  position: relative;
+  min-width: 0;
+}
+
+.imageWrapper {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #f0f0f0;
+  transform: rotate(2deg);
+}
+
+.carImage {
+  display: block;
+  width: 100%;
+  aspect-ratio: 5 / 4;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.imageWrapper:hover .carImage {
+  transform: scale(1.05);
+}
+
+.circle {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  background: #befa00;
+  border-radius: 50%;
+  top: -55px;
+  right: -45px;
+  z-index: 0;
+}
+
+.floatingCard {
+  position: absolute;
+  z-index: 2;
+  left: -35px;
+  bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 22px;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 10px 40px rgb(0 0 0 / 10%);
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #befa00;
+}
+
+.floatingCard strong {
+  font-size: 0.9rem;
+}
+
+.floatingCard p {
+  color: #777;
+  font-size: 0.8rem;
+  margin: 6px 0 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    padding: 45px 0 60px;
+  }
+
+  .content h1 {
+    font-size: clamp(3rem, 10vw, 4.5rem);
+    letter-spacing: -2px;
+  }
+
+  .description {
+    font-size: 0.95rem;
+  }
+
+  .stats {
+    margin-top: 35px;
+    gap: 30px;
+  }
+
+  .visual {
+    margin: 0 15px 15px 25px;
+  }
+
+  .circle {
+    width: 150px;
+    height: 150px;
+    right: -20px;
+    top: -35px;
+  }
+
+  .floatingCard {
+    left: -20px;
+    bottom: 20px;
+    padding: 14px;
+  }
+}
+
+@media (max-width: 380px) {
+  .stats {
+    gap: 20px;
+  }
+
+  .stats strong {
+    font-size: 1.25rem;
+  }
+
+  .floatingCard strong {
+    font-size: 0.8rem;
+  }
+}
